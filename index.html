@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Lobster|Pacifico" rel="stylesheet">
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Hanalei&family=Reggae+One&display=swap');
     html
     {
         scroll-behavior:smooth;
@@ -78,7 +79,7 @@
             text-transform: uppercase;
             display:inline-block;
             animation-name: logoanimate;
-            animation-duration: 0.12s;
+            animation-duration: 0.05s;
             animation-iteration-count: infinite;
             /* float: left; */
             animation-direction: alternate;
@@ -126,7 +127,7 @@
             }
             100%
             {
-                transform: translateX(10px) rotate3d(1,1,1,5deg) ;
+                transform: translateX(5px) rotate3d(1,1,1,2deg) ;
             }
         }
     .myvideo
@@ -179,9 +180,13 @@
     }
     .div1-1
     {
-        background: linear-gradient(to right top, rgba(108, 142, 192, 0.9),20%, rgba(1, 22, 56, 0.9));
+        /* background: linear-gradient(to right top, rgba(108, 142, 192, 0.9),20%, rgba(1, 22, 56, 0.9)); */
+        background: url('./video/star12.jpg');
+
         /* transform: translateY(-58px); */
         /* height: 100vh; */
+        background-repeat: no-repeat;
+        background-size: cover;
         
     }
     #divBorder 
@@ -287,7 +292,7 @@
 #text {
 	display: inline-block;
 	vertical-align: middle;
-	color: white;
+	color: orangered;
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: bold;
@@ -323,16 +328,18 @@ ul > li > a
 }
 #text1
 {
-    color: rgb(250, 250, 250);
+    color: cyan;
     font-size: 60px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Audiowide', cursive;
 }
 #F_ltr
 {
-    color: rgb(250, 250, 250);
+    color: orangered;
     font-size: 60px;
     font-family: 'Roboto', sans-serif;
     animation: animate1 1.6s all ;
+    font-family: 'Audiowide', cursive;
 }
 @keyframes animate1
 {
@@ -347,7 +354,7 @@ ul > li > a
 }
 .div1-1
 {
-    width: 55%;
+    width: 60%;
     animation-name: animate5;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -360,12 +367,12 @@ ul > li > a
     }
     to
     {
-        width:55%;
+        width:60%;
     }
 }
 .div1-2
 {
-    width: 45%;
+    width: 40%;
     animation-name: animate6;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -378,7 +385,7 @@ ul > li > a
     }
     to
     {
-        width: 45%;
+        width: 40%;
     }
 }
 .sec1
@@ -1425,7 +1432,7 @@ ul > li > a
     // List of sentences
 var _CONTENT = [ 
 	"Front-End Web Developer....!", 
-	" Lives In Bangalore." 
+	" Lives In Gokak." 
 	
 ];
 
