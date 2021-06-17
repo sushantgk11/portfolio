@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sushant Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -23,6 +23,8 @@
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Great+Vibes|Kaushan+Script|Lobster|Pacifico" rel="stylesheet">
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Hanalei&family=Reggae+One&display=swap');
+       @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+     
     html
     {
         scroll-behavior:smooth;
@@ -42,94 +44,6 @@
         margin-left:40vw;
         border: 1px solid white;  
     }
-    nav ul li a 
-        {
-            text-decoration: none;
-            color: rgb(192, 188, 188);
-            position: relative;
-        }
-    nav ul li a:before 
-        {
-            position: absolute;
-            content: '';
-            height: 3px;
-            width: 100%;
-            background-color: white;
-            left: 0;
-            bottom: 0;
-            margin-bottom: -7px;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: 0.6s transform ;
-            
-            
-        }
-        nav ul li a:hover:before, nav ul li a:active 
-        {
-            transform-origin: left;
-            transform: scaleX(1);
-            transition: 0.6s transform ;
-            
-        }
-        nav > a
-        {
-            
-            margin:0 0 0 25px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            display:inline-block;
-            animation-name: logoanimate;
-            animation-duration: 0.05s;
-            animation-iteration-count: infinite;
-            /* float: left; */
-            animation-direction: alternate;
-            animation-timing-function: ease-in-out;
-            color: white;
-            
-        }
-        nav > a:hover
-        {
-            color: white;
-            text-decoration: none;
-        }
-        nav>a::first-letter
-        {
-            /* text-align: start; */
-            font-size: 30px;
-            color: rgb(255, 102, 0);
-            padding-left: 10px;
-            padding-right:10px ;
-            border: 3px solid cyan;
-            background-color: rgb(0, 0, 0);
-            font-weight: bold;
-            border-radius: 100px;
-            animation-name: logoanimate2;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            /* transform: translateY(-50px); */
-        }
-        @keyframes logoanimate2 
-        {
-            0%
-            {
-                transform: rotate(0deg) ;
-            }
-            100%
-            {
-                transform: rotate(180deg) ;
-            }
-        }
-        @keyframes logoanimate
-        {
-            0%
-            {
-                transform: translate(0px) ;
-            }
-            100%
-            {
-                transform: translateX(5px) rotate3d(1,1,1,2deg) ;
-            }
-        }
     .myvideo
     {
     position: relative;
@@ -156,17 +70,17 @@
         height: 100vh;
         z-index: 0;
     }
-    nav
+    /* nav
     {
         z-index: 5;
         background: transparent; 
-    }
+    } */
     @media only screen and (max-width:992px)
     {
-        nav
+        /* nav
         {
             background-color: black;
-        }
+        } */
         #mymenu ul li a
         {
             border-bottom: none;
@@ -1137,12 +1051,188 @@ ul > li > a
     background-color: blue;
 }
 
+.navbar-wrapper {
+  width: 100%;
+  height: 50px;
+  /* padding: 8.6px 0 8.6px 0; */
+  position: relative;
+  z-index: 99;
+  background-color: transparent;
+}
+.brand {
+  margin-left: 20px;
+  float: left;
+}
+.brand img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.brand h2 {
+  color: #ffffff;
+  font-size: 30px;
+  float: left;
+  margin:6px 0 0 9.5px;
+  /* line-height: 50px; */
+  color: orangered;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.link-wrapper {
+  float: left;
+  margin: 0 0 0 3rem;
+}
+.contact {
+    float: right;
+    margin: 10px;
+}
+.link-wrapper li {
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 55px;
+  color: #ffffff;
+  height: 21px;
+  margin-right: 3.587vw;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.contact li {
+    list-style-type: none;
+}
+.link-wrapper li:nth-child(6)
+{
+    display: none;
+}
+.link-wrapper li.link-item::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #00dbd0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -26px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.6s transform;
+}
+.link-wrapper li.link-item:hover:before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: 0.6s transform;
+}
+.contact li button {
+  width: 141px;
+  /* height: 40px; */
+  /* line-height: 20px; */
+  color: #ffffff;
+  /* padding: 8px 40px 8px 40px; */
+  border-radius: 10px;
+  border: 2px solid #00dbd0;
+  background-color: transparent;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.contact li button:hover {
+  color: white;
+  background-color: #00dbd0;
+}
+.navbar-wrapper input[type="checkbox"] {
+  visibility: hidden;
+}
+.navbar-wrapper #toggle,
+.navbar-wrapper #close {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  line-height: 50px;
+  cursor: pointer;
+  color: White;
+}
+
+@media (max-width: 1060px) {
+  .brand {
+    margin-left: 3.176vw;
+  }
+  .link-wrapper {
+    margin: 0 3.565vw;
+  }
+}
+@media (max-width: 912px) {
+  .link-wrapper {
+    display: block;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 50px;
+    transition: 0.5s all;
+  }
+  .contact{
+      display: none;
+  }
+  .link-wrapper li.link-item::before {
+      width: 0%;
+  }
+  .link-wrapper li {
+    color: white;
+  }
+  .contact li button {
+    color: white;
+  }
+  .contact li button:hover {
+    color: black;
+    font-weight: bold;
+  }
+  .link-wrapper li {
+    float: none;
+    text-align: center;
+    padding: 30px;
+  }
+  .link-wrapper li:nth-child(6)
+{
+    display: block;
+}
+  .navbar-wrapper #toggle,
+  .navbar-wrapper #close {
+    margin: 0 5.565vw;
+  }
+  .navbar-wrapper #toggle {
+    display: block;
+  }
+  .navbar-wrapper #check:checked ~ .link-wrapper {
+    transform: translateX(0%);
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    opacity: 1;
+  }
+  .navbar-wrapper #check:checked ~ label #toggle {
+    display: none;
+  }
+  .navbar-wrapper #check:checked ~ label #close {
+    display: block;
+  }
+}
+
+#loading{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:9999;
+  background:url("./video/Pinwheel.gif") no-repeat center center white;
+}
 </style>
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<body>
-        
-    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg  p-0 sticky-top">
+<body onLoad="loadingFunc()">
+        <div id="loading"></div>
+    <!-- <nav id="navbar" class="navbar navbar-dark navbar-expand-lg  p-0 sticky-top">
         <a href="" class="navbar-bran ml-3">SUSHANT</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu">
@@ -1172,7 +1262,30 @@ ul > li > a
             </ul>
         </div>
 
-    </nav>
+    </nav> -->
+    <nav id="navbar" class="navbar-wrapper">
+        <input id="check" type="checkbox" name="check" />
+        <label for="check">
+          <i class="fa fa-bars" id="toggle"></i>
+          <i class="fa fa-times" id="close"></i>
+        </label>
+
+        <div class="brand">
+          <img src="./video/Group 220.png" alt="" />
+          <h2>Sushant</h2>
+        </div>
+        <ul class="link-wrapper">
+          <li class="link-item" >Home</li>
+          <li class="link-item" >About Us</li>
+          <li class="link-item">Skill</li>
+          <li class="link-item">My work</li>
+          <li class="link-item">Service</li>
+          <li class="link-item hidden-link">Contact</li>
+        </ul>
+        <ul class="contact">
+            <li><Button>Contact</Button></li>
+        </ul>
+      </nav>
 
     <div class="div1 d-flex">
         <div class="div1-1 d-none d-md-block">
@@ -1368,17 +1481,16 @@ ul > li > a
                         <p id="sp8" class="small">ReactJs + Redux</p>
                     </div>
                 </div>
-                <div class="col-md-4 box filter other mt-3">
+                <div class="col-md-4 box filter react mt-3">
                     <div class="img9">
-                        <img src="./video/Screenshot (44).png" alt="" width="100%" height="250px">
+                        <img src="./video/Screenshot (53).png" alt="" width="100%" height="250px">
                     </div>
                     <div class="overlay overlay9"  onmouseover="hover9()" onmouseout="out9()">
-                        <a id="search9" href="https://codepen.io/sushantgk11/full/OJWrNzq" class="fa fa-search margin-20"></a><br><br><br><br>
-                        <p id="p9">Responsive Home_Page</p>
-                        <p id="sp9" class="small">HTML5 + CSS3</p>
+                        <a id="search9" href="https://sushantgk11.github.io/organic-nature/" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p9">Organic-Nature Portfolio</p>
+                        <p id="sp9" class="small">ReactJs</p>
                     </div>
                 </div>
-            </div>
             <div class="row">
                 <div class="col-md-4 box filter other mt-3">
                     <div class="img10">
@@ -1390,6 +1502,17 @@ ul > li > a
                         <p id="sp10" class="small">HTML5 + CSS3 + Bootstrap</p>
                     </div>
                 </div>
+                <div class="col-md-4 box filter other mt-3">
+                    <div class="img11">
+                        <img src="./video/Screenshot (44).png" alt="" width="100%" height="250px">
+                    </div>
+                    <div class="overlay overlay11"  onmouseover="hover11()" onmouseout="out11()">
+                        <a id="search11" href="https://codepen.io/sushantgk11/full/OJWrNzq" class="fa fa-search margin-20"></a><br><br><br><br>
+                        <p id="p11">Responsive Home_Page</p>
+                        <p id="sp11" class="small">HTML5 + CSS3</p>
+                    </div>
+                </div>
+            </div>
             </div>
 
             
@@ -1735,7 +1858,20 @@ $(document).ready(function(){
         document.getElementById("p10").style.color = "rgba(252, 252, 252, 0.0)";
         document.getElementById("sp10").style.color = "rgba(252, 252, 252, 0.0)";
     }
+    function hover11()
+    {
+        document.getElementById("search11").style.color="white";
+        document.getElementById("p11").style.color = "white";
+        document.getElementById("sp11").style.color = "white";
+    }
+    function out11()
+    {
+        document.getElementById("search11").style.color="rgba(252, 252, 252, 0.0)";
+        document.getElementById("p11").style.color = "rgba(252, 252, 252, 0.0)";
+        document.getElementById("sp11").style.color = "rgba(252, 252, 252, 0.0)";
+    }
 
+    
 
     function myMap() {
 var mapProp= {
@@ -1751,23 +1887,25 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) 
-  {
-    document.getElementById("navbar").style.padding = "30px 30px";
-    document.getElementById("navbar").style.fontSize = "25px";
-    document.getElementById("navbar").style.backgroundColor="rgba(4, 37, 90, 0.8)";
-    document.getElementsByClassName("nav-link").style.color = "black";
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    // document.getElementById("navbar").style.padding = "15px 0 10px 0";
+    document.getElementById("navbar").style.position = "fixed";
+    document.getElementById("navbar").style.backgroundColor = "blue";
+    document.getElementById("navbar").style.boxShadow = "0px 1px 5px 0px black" ;
+
     
-  } 
- else 
-  {
-    document.getElementById("navbar").style.padding = "10px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar").style.backgroundColor="rgba(4, 37, 90, 0)";
+  } else {
+    // document.getElementById("navbar").style.padding = "8.6px 0 8.6px 0";
+    document.getElementById("navbar").style.position = "relative";
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("navbar").style.boxShadow = "0px 0px 0px 0px" ;
     
   }
 }
 
+function loadingFunc(){
+        document.getElementById("loading").style.display = "none";
+    }
 
 
 
