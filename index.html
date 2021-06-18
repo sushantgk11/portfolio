@@ -1058,6 +1058,7 @@ ul > li > a
   position: relative;
   z-index: 99;
   background-color: transparent;
+  transition: 0.5s all;
 }
 .brand {
   margin-left: 20px;
@@ -1098,6 +1099,11 @@ ul > li > a
   cursor: pointer;
   position: relative;
 }
+.link-wrapper li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
 .contact li {
     list-style-type: none;
 }
@@ -1123,19 +1129,21 @@ ul > li > a
   transform: scaleX(1);
   transition: 0.6s transform;
 }
-.contact li button {
+.contact li a {
   width: 141px;
   /* height: 40px; */
   /* line-height: 20px; */
   color: #ffffff;
-  /* padding: 8px 40px 8px 40px; */
+  padding: 8px 40px 8px 40px;
   border-radius: 10px;
   border: 2px solid #00dbd0;
   background-color: transparent;
   transition: 0.5s all;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
 }
-.contact li button:hover {
+.contact li a:hover {
   color: white;
   background-color: #00dbd0;
 }
@@ -1180,13 +1188,13 @@ ul > li > a
   .link-wrapper li.link-item::before {
       width: 0%;
   }
-  .link-wrapper li {
+  .link-wrapper li a {
     color: white;
   }
-  .contact li button {
+  .contact li a {
     color: white;
   }
-  .contact li button:hover {
+  .contact li a:hover {
     color: black;
     font-weight: bold;
   }
@@ -1276,19 +1284,19 @@ ul > li > a
           <h2>Sushant</h2>
         </div>
         <ul class="link-wrapper">
-          <li class="link-item" >Home</li>
-          <li class="link-item" >About Us</li>
-          <li class="link-item">Skill</li>
-          <li class="link-item">My work</li>
-          <li class="link-item">Service</li>
-          <li class="link-item hidden-link">Contact</li>
+          <li class="link-item" ><a href="#div1">Home</a></li>
+          <li class="link-item" ><a href="#div2">About Me</a></li>
+          <li class="link-item"><a href="#div3">Skill</a></li>
+          <li class="link-item"><a href="#div4">My work</a></li>
+          <li class="link-item"><a href="#div5">Service</a></li>
+          <li class="link-item hidden-link"><a href="#div6">Contact</a></li>
         </ul>
         <ul class="contact">
-            <li><Button>Contact</Button></li>
+            <li><a href="#div6">Contact</a></li>
         </ul>
       </nav>
 
-    <div class="div1 d-flex">
+    <div id="div1" class="div1 d-flex">
         <div class="div1-1 d-none d-md-block">
             
         </div>
@@ -1325,11 +1333,11 @@ ul > li > a
                 <img id="myphoto"  src="./video/sushant_img3.jpg" alt="">
             </div>
             <div class="col-md-7" id="para1">
-                <p class="para1">I am <span>SUSHANT KULKARNI</span> . I am a Front end web Developer in Bangalore, India. I am graduate Computer Application(BCA) at SSBCA degree collage Gokak,Karnataka and perceived Corporate Front End Web Developer training at WebStack Academy,Bangalore, Also enhancing knowledge and building designing & developement capabilities through day-to-day project experiences.</p>
+                <p class="para1">I am <span>SUSHANT KULKARNI</span> Front end web Developer in Bangalore, India. I am graduate Computer Application(BCA) at SSBCA degree collage Gokak,Karnataka and perceived Front End Web Developer training Also enhancing knowledge and building designing & developement capabilities through day-to-day project experiences.</p>
                 <section class="my_details">
                 <span>AGE : </span> 26<br>
                 <Span>ADDRESS : </Span> Gokak, Karnataka<br>
-                <span>EMAIL : </span> sushantkulkarni44@gmail.com<br>
+                <span>EMAIL : </span> sushantgk11@gmail.com<br>
                 <span>PHONE : </span> +91-9113690491<br>
                 <span>GITHUB : </span> sushantgk11.github.io/portfolio<br><br>
                 <a id="CV" class="mycv mycv1" href="./video/Sushant_CV.docx" download ><i class="fa fa-download"  ></i>  Download resume </a>
@@ -1562,14 +1570,14 @@ ul > li > a
         <h1>Get in Toutch</h1>
         <img id="img3" src="./shapes/shape-11.png" alt="">
         <section><a href="" class="fa fa-user" style="color: gray;"></a> <input type="text" placeholder="Name"></section>
-        <section><a href="" class="fa fa-user" style="color: gray;"></a> <input type="text" placeholder="Email"></section>
-        <section><a href="" class="fa fa-user" style="color: gray; transform: translateY(-90px);"></a> <textarea rows="2"  placeholder="Write Message"></textarea></section>
+        <section><a href="" class="fas fa-envelope" style="color: gray;"></a> <input type="text" placeholder="Email"></section>
+        <section><a href="" class="fas fa-comments" style="color: gray; transform: translateY(-80px);"></a> <textarea rows="2"  placeholder="Write Message"></textarea></section>
         <div class="btn ml-5 mr-5">Send Message</div>
         <img id="img2" src="./shapes/diamond.png" alt="">
     </div>
     <div id="adress2"  class="col-md-4 ">
         <h3>Contact Us</h3>
-        <p>Email : sushantkulkarni44@gmail.com</p>
+        <p>Email : sushantgk11@gmail.com</p>
         <p>Mobile : +91-9113690491</p>
         <a href="">SEND A MESSAGE</a>
     </div>
