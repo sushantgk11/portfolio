@@ -1182,6 +1182,7 @@ ul > li > a
     position: absolute;
     top: 50px;
     transition: 0.5s all;
+    animation: fade 0.99s;
   }
   .contact{
       display: none;
@@ -1214,6 +1215,7 @@ ul > li > a
   }
   .navbar-wrapper #toggle {
     display: block;
+    animation: fade 0.99s;
   }
   .navbar-wrapper #check:checked ~ .link-wrapper {
     transform: translateX(0%);
@@ -1227,6 +1229,17 @@ ul > li > a
   }
   .navbar-wrapper #check:checked ~ label #close {
     display: block;
+    animation: fade 0.99s;
+    
+  }
+  @keyframes  fade {
+      from {
+          opacity: 0;
+      }
+      to 
+      {
+          opacity: 1;
+      }
   }
 }
 
